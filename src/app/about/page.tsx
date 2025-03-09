@@ -4,10 +4,21 @@ import { useLanguage } from '../i18n/LanguageContext';
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
+// Define types for journey items
+interface JourneyItem {
+  title: string;
+  date: string;
+  description: string;
+  summary?: string;
+  category: string;
+  logo?: string;
+  skills: string[];
+}
+
 export default function About() {
   const { t } = useLanguage();
   const [selectedFilters, setSelectedFilters] = useState<string[]>([]);
-  const [journeyItems, setJourneyItems] = useState<any[]>([]);
+  const [journeyItems, setJourneyItems] = useState<JourneyItem[]>([]);
 
   // Categories with their colors
   const categories = [
@@ -21,7 +32,7 @@ export default function About() {
   useEffect(() => {
     const items = t('about.journey.items') || [];
     if (Array.isArray(items)) {
-      setJourneyItems(items);
+      setJourneyItems(items as JourneyItem[]);
     }
   }, [t]);
 

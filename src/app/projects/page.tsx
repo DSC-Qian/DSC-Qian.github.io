@@ -2,6 +2,17 @@
 
 import { useLanguage } from '../i18n/LanguageContext';
 
+// Define type for project item
+interface ProjectItem {
+  title: string;
+  date: string;
+  description: string;
+  technologies: string[];
+  points: string[];
+  github: string;
+  demo: string;
+}
+
 export default function Projects() {
   const { t } = useLanguage();
   const projects = t('projects.items') || [];
@@ -13,7 +24,7 @@ export default function Projects() {
         <p className="text-xl text-gray-600 mb-12">{t('projects.description')}</p>
 
         <div className="grid grid-cols-1 gap-12">
-          {Array.isArray(projects) && projects.map((project: any, index: number) => (
+          {Array.isArray(projects) && projects.map((project: ProjectItem, index: number) => (
             <div key={index} className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="p-8">
                 <div className="flex flex-col md:flex-row justify-between md:items-center mb-6">

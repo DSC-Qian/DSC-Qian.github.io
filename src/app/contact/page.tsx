@@ -94,7 +94,7 @@ export default function Contact() {
               <h2 className="text-xl font-semibold mb-4">Contact Information</h2>
               <p className="text-gray-600">
                 Feel free to reach out through the contact form or connect with me on
-                social media. I'll get back to you as soon as possible.
+                social media. I&apos;ll get back to you as soon as possible.
               </p>
             </div>
 
