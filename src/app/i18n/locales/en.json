@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "about": "About",
+    "projects": "Projects",
+    "contact": "Contact"
+  },
+  "about": {
+    "name": "Jiali Qian",
+    "title": "Data Scientist",
+    "summary": "Master's Student in Data Science | Data Analyst",
+    "description": "Data Science graduate student at NYU with experience in machine learning, data analysis, and software development. Proven track record in implementing ML solutions and optimizing data pipelines. Seeking full-time opportunities to leverage my expertise in data science and machine learning.",
+    "contact": {
+      "location": "Jersey City, NJ",
+      "phone": "(321) 408-9008",
+      "email": "tonyqian99@gmail.com",
+      "linkedin": "linkedin.com/in/jialiqian"
+    },
+    "filters": {
+      "title": "Filters",
+      "categories": "Categories",
+      "clear": "Clear filters"
+    },
+    "categories": {
+      "education": "Education",
+      "work": "Work",
+      "research": "Research",
+      "project": "Project"
+    },
+    "journey": {
+      "title": "My Journey",
+      "empty": "No items match your filters. Try adjusting your selection.",
+      "achievements": "Key Achievements",
+      "skills": "Skills Used",
+      "items": [
+        {
+          "title": "Master's in Data Science at NYU",
+          "date": "2023 - Present",
+          "description": "Pursuing advanced studies in data science at NYU's Center for Data Science, focusing on machine learning, natural language processing, and big data technologies.",
+          "summary": "Maintaining a 3.85 GPA while working as a research assistant on computer vision projects and collaborating across disciplines.",
+          "category": "education",
+          "logo": "/logos/nyu.png",
+          "skills": ["PyTorch", "NLP", "Big Data", "Computer Vision"]
+        },
+        {
+          "title": "Pedestrian Crossing Distance Analysis",
+          "date": "Sep. 2024 - Present",
+          "description": "Leading research on urban walkability using computer vision to analyze pedestrian crossing distances in cities across the US.",
+          "summary": "Fine-tuned Meta's SAM2 model for satellite imagery analysis, optimized inference pipelines, and implemented cloud infrastructure.",
+          "category": "research",
+          "skills": ["PyTorch", "Computer Vision", "GIS", "Python"]
+        },
+        {
+          "title": "MetroScore Transit Analysis",
+          "date": "May 2024 - Present",
+          "description": "Developing an open-source Python package for analyzing public transit efficiency compared to car-based transit in urban environments.",
+          "summary": "Created benchmarks for routing algorithm evaluation and optimized transit route search functionality.",
+          "category": "project",
+          "skills": ["Python", "Data Analysis", "GIS", "Transit APIs"]
+        },
+        {
+          "title": "Data Analyst at UC San Diego",
+          "date": "May 2022 - April 2023",
+          "description": "Worked at UC San Diego's Center for Microbiome Innovation, analyzing COVID-19 data and maintaining campus health dashboards.",
+          "summary": "Improved tracking algorithms and modernized infrastructure, enhancing COVID-19 tracing accuracy by 15%.",
+          "category": "work",
+          "logo": "/logos/ucsd.png",
+          "skills": ["Python", "HTML", "Docker", "Kubernetes", "Data Visualization"]
+        },
+        {
+          "title": "B.S. in Data Science at UCSD",
+          "date": "2019 - 2023",
+          "description": "Completed undergraduate studies in Data Science with a minor in Business at the University of California, San Diego.",
+          "summary": "Graduated with a 3.70 GPA, completed a capstone project on machine learning for financial market analysis, and served as a teaching assistant.",
+          "category": "education",
+          "logo": "/logos/ucsd.png",
+          "skills": ["Python", "Statistics", "Machine Learning", "SQL"]
+        },
+        {
+          "title": "Data Analyst Intern at Logitech",
+          "date": "July 2021 - December 2021",
+          "description": "Internship in Logitech's Go-to-Market department, analyzing product performance and generating sales trend visualizations.",
+          "summary": "Conducted performance analysis on 60+ core products and created visualizations for price adjustments.",
+          "category": "work",
+          "logo": "/logos/logitech.png",
+          "skills": ["Python", "Excel", "Tableau", "SQL", "Data Analysis"]
+        },
+        {
+          "title": "Aerosol Flow Analysis",
+          "date": "Sept. 2022 - March 2023",
+          "description": "Developed a mobile application for evaluating aerosol transmission risks in public spaces using sensor data and computer vision.",
+          "summary": "Built an iOS app using Swift for data collection and implemented real-time risk assessment algorithms.",
+          "category": "project",
+          "skills": ["Swift", "iOS", "PyTorch", "Computer Vision"]
+        }
+      ]
+    },
+    "skills": {
+      "title": "Technical Skills",
+      "ml_ai": "Machine Learning & AI",
+      "ml_ai_items": ["PyTorch", "Sklearn", "NLTK", "Computer Vision", "Deep Learning"],
+      "data_cloud": "Data & Cloud",
+      "data_cloud_items": ["Python", "SQL", "AWS", "GCP", "Docker", "Kubernetes", "Hadoop", "Spark"],
+      "development": "Development",
+      "development_items": ["Git", "Shell Scripts", "HTML", "Swift", "Go", "Java"]
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Here are some of my recent projects in machine learning, data science, and software development.",
+    "items": [
+      {
+        "title": "Pedestrian Crossing Distance Analysis",
+        "date": "Sep. 2024 - Present",
+        "description": "A machine learning project analyzing pedestrian crossing distances in urban environments using satellite imagery.",
+        "technologies": ["PyTorch", "Computer Vision", "GIS", "Python"],
+        "points": [
+          "Fine-tuned Meta's SAM2 model for satellite imagery analysis, achieving 0.851 IoU",
+          "Optimized inference pipeline by 37% through parameter tuning",
+          "Implemented end-to-end ML pipeline with cloud infrastructure"
+        ],
+        "github": "https://github.com/yourusername/pedestrian-crossing",
+        "demo": "https://demo-link.com"
+      },
+      {
+        "title": "MetroScore",
+        "date": "May. 2024 - Present",
+        "description": "A Python package for analyzing public transit efficiency compared to car-based transit.",
+        "technologies": ["Python", "Data Analysis", "GIS", "Transit APIs"],
+        "points": [
+          "Developed Python package for public transit efficiency analysis",
+          "Created benchmarks for routing algorithm evaluation",
+          "Optimized transit route search functionality"
+        ],
+        "github": "https://github.com/yourusername/metroscore",
+        "demo": "https://demo-link.com"
+      },
+      {
+        "title": "Aerosol Flow Analysis",
+        "date": "Sept. 2022 - March 2023",
+        "description": "Mobile application for evaluating aerosol transmission risks in public spaces using sensor data.",
+        "technologies": ["Swift", "iOS", "PyTorch", "Computer Vision"],
+        "points": [
+          "Developed iOS application using Swift for mobile sensor data collection",
+          "Trained image classification models with thermal imagery",
+          "Implemented real-time risk assessment algorithms"
+        ],
+        "github": "https://github.com/yourusername/aerosol-flow",
+        "demo": "https://demo-link.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "Contact Me",
+    "description": "Feel free to reach out if you'd like to discuss opportunities or collaborate on projects.",
+    "form": {
+      "name": "Name",
+      "email": "Email",
+      "message": "Message",
+      "submit": "Send Message"
+    },
+    "connect": {
+      "title": "Connect with me",
+      "description": "You can also find me on these platforms:"
+    }
+  }
+} 

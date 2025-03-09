@@ -1,0 +1,166 @@
+{
+  "nav": {
+    "about": "关于",
+    "projects": "项目",
+    "contact": "联系"
+  },
+  "about": {
+    "name": "钱佳立",
+    "title": "数据科学家",
+    "summary": "数据科学硕士在读 | 数据分析师",
+    "description": "纽约大学数据科学硕士在读，具有机器学习、数据分析和软件开发经验。在实施机器学习解决方案和优化数据管道方面有成功案例。正在寻找能够充分发挥数据科学和机器学习专长的全职机会。",
+    "contact": {
+      "location": "泽西市，新泽西州",
+      "phone": "(321) 408-9008",
+      "email": "tonyqian99@gmail.com",
+      "linkedin": "linkedin.com/in/jialiqian"
+    },
+    "filters": {
+      "title": "筛选",
+      "categories": "类别",
+      "clear": "清除筛选"
+    },
+    "categories": {
+      "education": "教育",
+      "work": "工作",
+      "research": "研究",
+      "project": "项目"
+    },
+    "journey": {
+      "title": "我的历程",
+      "empty": "没有符合筛选条件的项目，请调整选择。",
+      "achievements": "主要成就",
+      "skills": "使用技能",
+      "items": [
+        {
+          "title": "纽约大学数据科学硕士",
+          "date": "2023 - 至今",
+          "description": "在纽约大学数据科学中心攻读数据科学高级学位，专注于机器学习、自然语言处理和大数据技术。",
+          "summary": "保持3.85的GPA，同时担任计算机视觉项目的研究助理，并参与跨学科合作。",
+          "category": "education",
+          "logo": "/logos/nyu.png",
+          "skills": ["PyTorch", "自然语言处理", "大数据", "计算机视觉"]
+        },
+        {
+          "title": "行人过街距离分析",
+          "date": "2024年9月 - 至今",
+          "description": "使用计算机视觉技术分析美国各城市行人过街距离，研究城市步行友好度。",
+          "summary": "微调Meta的SAM2模型用于卫星图像分析，优化推理流程，并实现云基础设施。",
+          "category": "research",
+          "skills": ["PyTorch", "计算机视觉", "GIS", "Python"]
+        },
+        {
+          "title": "MetroScore公共交通分析",
+          "date": "2024年5月 - 至今",
+          "description": "开发开源Python包，用于分析城市环境中公共交通与私家车出行效率的对比。",
+          "summary": "创建路由算法评估基准，并优化交通路线搜索功能。",
+          "category": "project",
+          "skills": ["Python", "数据分析", "GIS", "交通API"]
+        },
+        {
+          "title": "圣地亚哥分校数据分析师",
+          "date": "2022年5月 - 2023年4月",
+          "description": "在加州大学圣地亚哥分校微生物组创新中心工作，分析COVID-19数据并维护校园健康仪表板。",
+          "summary": "改进追踪算法并现代化基础设施，提高COVID-19追踪准确率15%。",
+          "category": "work",
+          "logo": "/logos/ucsd.png",
+          "skills": ["Python", "HTML", "Docker", "Kubernetes", "数据可视化"]
+        },
+        {
+          "title": "加州大学圣地亚哥分校数据科学学士",
+          "date": "2019 - 2023",
+          "description": "在加州大学圣地亚哥分校完成数据科学本科学习，辅修商业。",
+          "summary": "以3.70的GPA毕业，完成金融市场分析机器学习毕业项目，并担任入门编程课程的助教。",
+          "category": "education",
+          "logo": "/logos/ucsd.png",
+          "skills": ["Python", "统计学", "机器学习", "SQL"]
+        },
+        {
+          "title": "罗技数据分析实习生",
+          "date": "2021年7月 - 2021年12月",
+          "description": "在罗技市场营销部门实习，分析产品性能并生成销售趋势可视化。",
+          "summary": "对60多个核心产品进行性能分析，并创建用于价格调整的可视化。",
+          "category": "work",
+          "logo": "/logos/logitech.png",
+          "skills": ["Python", "Excel", "Tableau", "SQL", "数据分析"]
+        },
+        {
+          "title": "气溶胶流动分析",
+          "date": "2022年9月 - 2023年3月",
+          "description": "开发移动应用程序，使用传感器数据和计算机视觉评估公共场所气溶胶传播风险。",
+          "summary": "使用Swift构建iOS应用程序收集数据，并实现实时风险评估算法。",
+          "category": "project",
+          "skills": ["Swift", "iOS", "PyTorch", "计算机视觉"]
+        }
+      ]
+    },
+    "skills": {
+      "title": "技术技能",
+      "ml_ai": "机器学习与人工智能",
+      "ml_ai_items": ["PyTorch", "Sklearn", "NLTK", "计算机视觉", "深度学习"],
+      "data_cloud": "数据与云计算",
+      "data_cloud_items": ["Python", "SQL", "AWS", "GCP", "Docker", "Kubernetes", "Hadoop", "Spark"],
+      "development": "开发工具",
+      "development_items": ["Git", "Shell脚本", "HTML", "Swift", "Go", "Java"]
+    }
+  },
+  "projects": {
+    "title": "项目",
+    "description": "以下是我在机器学习、数据科学和软件开发领域的近期项目。",
+    "items": [
+      {
+        "title": "行人过街距离分析",
+        "date": "2024年9月 - 至今",
+        "description": "使用卫星图像分析城市环境中行人过街距离的机器学习项目。",
+        "technologies": ["PyTorch", "计算机视觉", "GIS", "Python"],
+        "points": [
+          "微调Meta的SAM2模型用于卫星图像分析，达到0.851 IoU",
+          "通过参数调优优化推理流程37%",
+          "实现端到端机器学习流程并迁移至云端"
+        ],
+        "github": "https://github.com/yourusername/pedestrian-crossing",
+        "demo": "https://demo-link.com"
+      },
+      {
+        "title": "MetroScore公共交通评分",
+        "date": "2024年5月 - 至今",
+        "description": "用于分析公共交通与私家车出行效率对比的Python包。",
+        "technologies": ["Python", "数据分析", "GIS", "交通API"],
+        "points": [
+          "开发用于分析公共交通效率的Python包",
+          "创建路由算法评估基准",
+          "优化交通路线搜索功能"
+        ],
+        "github": "https://github.com/yourusername/metroscore",
+        "demo": "https://demo-link.com"
+      },
+      {
+        "title": "气溶胶流动分析",
+        "date": "2022年9月 - 2023年3月",
+        "description": "使用传感器数据评估公共场所气溶胶传播风险的移动应用。",
+        "technologies": ["Swift", "iOS", "PyTorch", "计算机视觉"],
+        "points": [
+          "使用Swift开发iOS应用程序收集移动传感器数据",
+          "训练热成像图像分类模型",
+          "实现实时风险评估算法"
+        ],
+        "github": "https://github.com/yourusername/aerosol-flow",
+        "demo": "https://demo-link.com"
+      }
+    ]
+  },
+  "contact": {
+    "title": "联系我",
+    "description": "如果您想讨论工作机会或项目合作，欢迎随时联系我。",
+    "form": {
+      "name": "姓名",
+      "email": "邮箱",
+      "message": "留言",
+      "submit": "发送消息"
+    },
+    "connect": {
+      "title": "社交媒体",
+      "description": "您也可以在以下平台找到我："
+    }
+  }
+} 
