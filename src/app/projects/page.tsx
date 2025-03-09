@@ -14,14 +14,14 @@ interface ProjectItem {
 }
 
 export default function Projects() {
-  const { t } = useLanguage();
+  const { t, tString } = useLanguage();
   const projects = t('projects.items') || [];
 
   return (
     <div className="min-h-screen py-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h1 className="text-4xl font-bold mb-6">{t('projects.title')}</h1>
-        <p className="text-xl text-gray-600 mb-12">{t('projects.description')}</p>
+        <h1 className="text-4xl font-bold mb-6">{tString('projects.title')}</h1>
+        <p className="text-xl text-gray-600 mb-12">{tString('projects.description')}</p>
 
         <div className="grid grid-cols-1 gap-12">
           {Array.isArray(projects) && projects.map((project: ProjectItem, index: number) => (

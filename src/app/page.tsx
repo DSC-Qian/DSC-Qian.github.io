@@ -4,7 +4,7 @@ import Link from 'next/link';
 import { useLanguage } from './i18n/LanguageContext';
 
 export default function Home() {
-  const { t } = useLanguage();
+  const { tString } = useLanguage();
   
   return (
     <main className="min-h-screen flex flex-col justify-center items-center p-8 md:p-24">
@@ -13,7 +13,7 @@ export default function Home() {
           Hello, I&apos;m Jiali Qian
         </h1>
         <p className="text-xl md:text-2xl text-gray-600 mb-12">
-          {t('about.summary')}
+          {tString('about.summary')}
         </p>
         
         <div className="flex flex-col md:flex-row gap-6 justify-center">
@@ -21,19 +21,19 @@ export default function Home() {
             href="/about" 
             className="bg-indigo-600 hover:bg-indigo-700 text-white px-6 py-3 rounded-lg shadow-md transition"
           >
-            {t('nav.about')}
+            {tString('nav.about')}
           </Link>
           <Link 
             href="/projects" 
             className="bg-white hover:bg-gray-100 text-indigo-600 border border-indigo-200 px-6 py-3 rounded-lg shadow-md transition"
           >
-            {t('nav.projects')}
+            {tString('nav.projects')}
           </Link>
           <Link 
             href="/contact" 
             className="bg-white hover:bg-gray-100 text-indigo-600 border border-indigo-200 px-6 py-3 rounded-lg shadow-md transition"
           >
-            {t('nav.contact')}
+            {tString('nav.contact')}
           </Link>
         </div>
       </div>

@@ -4,16 +4,17 @@ import React, { createContext, useContext, useState, useEffect, ReactNode } from
 import en from './locales/en.json';
 import zh from './locales/zh.json';
 
-// Define translation type structure
-interface Translations {
-  [key: string]: string | Translations;
+// Define translation data structure
+interface TranslationData {
+  [key: string]: TranslationData | string | string[] | Record<string, unknown>;
 }
 
 // Define context type
 interface LanguageContextType {
   language: string;
   setLanguage: (lang: string) => void;
-  t: (key: string) => any; // This return type is complex due to nested structure
+  t: (key: string) => any;
+  tString: (key: string) => string;
 }
 
 // Create context with default values
@@ -21,12 +22,13 @@ const LanguageContext = createContext<LanguageContextType>({
   language: 'en',
   setLanguage: () => {},
   t: () => '',
+  tString: () => '',
 });
 
 // Define available languages
-const languages = {
-  en,
-  zh,
+const languages: Record<string, TranslationData> = {
+  en: en as TranslationData,
+  zh: zh as TranslationData,
 };
 
 // Create language provider component
@@ -51,14 +53,16 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     }
   }, [language]);
 
-  // Translation function
+  // Translation function that returns any type
   const t = (key: string): any => {
     const keys = key.split('.');
-    let value: any = languages[language as keyof typeof languages];
+    let value: TranslationData | string | string[] | Record<string, unknown> = 
+      languages[language as keyof typeof languages];
     
     for (const k of keys) {
       if (value && typeof value === 'object' && k in value) {
-        value = value[k];
+        const objValue = value as TranslationData;
+        value = objValue[k];
       } else {
         return key; // Return key if translation not found
       }
@@ -67,8 +71,17 @@ export function LanguageProvider({ children }: { children: ReactNode }) {
     return value;
   };
 
+  // Translation function specifically for strings (for React nodes)
+  const tString = (key: string): string => {
+    const value = t(key);
+    if (typeof value === 'string') {
+      return value;
+    }
+    return key; // Fallback to key
+  };
+
   return (
-    <LanguageContext.Provider value={{ language, setLanguage, t }}>
+    <LanguageContext.Provider value={{ language, setLanguage, t, tString }}>
       {children}
     </LanguageContext.Provider>
   );
